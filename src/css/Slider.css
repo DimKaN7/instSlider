@@ -1,0 +1,29 @@
+.slider {
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #000;
+}
+
+.imageContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.4s;
+}
+
+.sliderItem {
+    max-width: 600px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
