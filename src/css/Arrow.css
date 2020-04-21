@@ -1,0 +1,34 @@
+.arrowFolder {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.arrowFolder.left {
+    left: 0;
+}
+
+.arrowFolder.right {
+    right: 0;
+}
+
+/* .arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+} */
+
+/* .arrow.left {
+    background: url('../icons/arrowSlider.svg') center no-repeat;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.arrow.right {
+    background: url('../icons/arrowSlider.svg') center no-repeat;
+    background-size: contain;
+} */

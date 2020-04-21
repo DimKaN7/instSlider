@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import Dots from './Dots';
-import Arrows from './Arrows';
+import Arrow from './Arrow';
+import ImageContainer from './ImageContainer';
 
 import '../css/Slider.css';
 
-function Slider(props) {
+export default function Slider(props) {
     let slideIndex = 1;
     let [images, ] = useState(props.images);
 
@@ -25,57 +26,25 @@ function Slider(props) {
                 slideIndex--;
                 imageContainer.style.transform = `translate(-${600*(slideIndex - 1)}px)`;
                 dots[slideIndex].classList.remove('selected');
-                dots[slideIndex - 1].classList.add('selected');
+                dots[slideIndex - 1].classList.add('selected');       
             }
         }
-
     }
 
-    const onArrowClick = (arrow) => {
-        changeSlide(arrow);
+    const onArrowClick = (direction) => {
+        changeSlide(direction);
     }
 
     return(
         <div className='slider'>
-            <div className='imageContainer'>
-                {images.map(image => 
-                    <img className='sliderItem' src={image} key={images.indexOf(image)}/>
-                )}
-            </div>
-            <Arrows onArrowClick={onArrowClick}/>
-            <Dots slidesNum={images.length}/>
+            <Arrow onArrowClick={onArrowClick} 
+                direction='left'
+                background='../icons/arrowSlider.svg' />
+            <ImageContainer images={images}></ImageContainer>
+            <Arrow onArrowClick={onArrowClick} 
+                direction='right'
+                background='../icons/arrowSlider.svg' />
+            <Dots slidesNum={images.length} />
         </div>
-
-
-        // <div class="slider" id="photo">
-        // <div class="slider-title">Фото с наших поездок
-        // </div>
-        // <div class="wrap">
-
-        //     <div class="slider-item fade">
-        //         <img src="img/slider_1.jpg" alt="slider">
-        //     </div>
-        //     <div class="slider-item fade">
-        //         <img src="img/slider_2.jpg" alt="slider">
-        //     </div>
-        //     <div class="slider-item fade">
-        //         <img src="img/slider_3.jpg" alt="slider">
-        //     </div>
-        //     <div class="slider-item fade">
-        //         <img src="img/slider_4.jpg" alt="slider">
-        //     </div>
-
-        //     <div class="prev"><div class="arrow-left"></div></div>
-        //     <div class="next"><div class="arrow-right"></div></div>
-        // </div>
-        // <div class="slider-dots">
-        //     <div class="dot dot-active"></div>
-        //     <div class="dot"></div>
-        //     <div class="dot"></div>
-        //     <div class="dot"></div>
-        // </div>
-        // </div>
     );
 }
-
-export default Slider;

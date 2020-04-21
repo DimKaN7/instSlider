@@ -1,0 +1,12 @@
+.post {
+    position: relative;
+    margin: auto;
+    width: 935px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.postDesc {
+    flex-grow: 1;
+}
