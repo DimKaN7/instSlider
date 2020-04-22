@@ -5,11 +5,8 @@ import '../css/Post.css';
 import Arrow from './Arrow';
 
 export default function Post(props) {
-    function importAll(r) {
-        return r.keys().map(r);
-    }
-    
-    const images = importAll(require.context('../images/', false, /\.(png|jpe?g|svg)$/));
+    const context = require.context('../images/', false, /\.(jpg)$/);
+    const images = context.keys().map(context);
 
     return (
         <div className='post'>

@@ -11,7 +11,7 @@ export default function Dots(props) {
                 const dots = new Array(dotsNum);
                 for (let i = 0; i < dotsNum; i++) {
                     dots.push(
-                        i == 0 ? <div className='dot selected'></div> : <div className='dot'></div>
+                        i === 0 ? <div key={i} className='dot selected'></div> : <div key={i} className='dot'></div>
                     )
                 }
                 return dots;
