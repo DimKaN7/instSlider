@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import '../css/ImageContainer.css';
 
 export default function ImageContainer(props) {
-    const [images, ] = useState(props.images);
+    const {images} = props;
 
     return(
         <div className='imageContainer' >

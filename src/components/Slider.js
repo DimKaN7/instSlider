@@ -8,7 +8,7 @@ import '../css/Slider.css';
 
 export default function Slider(props) {
     let [slideIndex, setSlideIndex] = useState(1);
-    let [images, ] = useState(props.images);
+    let {images} = props;
 
     function changeSlide(direction) {
         const imageContainer = document.querySelector('.imageContainer');
