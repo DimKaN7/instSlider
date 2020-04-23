@@ -1,0 +1,22 @@
+.postDescContainer {
+    width: 318px;
+    height: 343px;
+    border-left: 1px solid rgb(239, 239, 239);
+    padding: 16px 0 16px 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.postDescContent {
+    width: 100%;
+    display: flex;
+    max-height: 343px;
+    flex-direction: row;
+}
+
+.description {
+    width: 100%;
+    max-height: 100%;
+    white-space: normal;
+}
+

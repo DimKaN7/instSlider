@@ -1,0 +1,29 @@
+.postCommentContainer {
+    margin-top: 8px;
+    border-top: 1px solid rgb(239, 239, 239);
+    padding: 0 16px;
+    /* box-sizing: border-box; */
+    width: 303px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.postCommentContainer input {
+    outline: none;
+    border: none;
+    resize: none;
+    font-size: 14px;
+    width: 206px;
+    height: 17px;
+}
+
+.postCommentContainer button {
+    color: #0095f6;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}

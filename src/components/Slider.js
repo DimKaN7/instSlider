@@ -39,7 +39,7 @@ export default function Slider(props) {
         changeSlide(direction);
     }
 
-    const context = require.context('../icons/', false, /\.(svg)$/);
+    const context = require.context('../icons/', false, /arrowSlider\.(svg)$/);
     const icon = context.keys().map(context);
 
     return(
