@@ -50,8 +50,8 @@ export default function Slider(props) {
                 slidesNum={images.length}
                 // parent='slider'
                 background={icon} 
-                width={30}
-                height={30}/>
+                width={25}
+                height={25}/>
             <ImageContainer images={images}></ImageContainer>
             <Arrow onArrowClick={onArrowClick} 
                 direction='right'
@@ -59,8 +59,8 @@ export default function Slider(props) {
                 slidesNum={images.length}
                 // parent='slider'
                 background={icon} 
-                width={30}
-                height={30}/>
+                width={25}
+                height={25}/>
             <Dots slidesNum={images.length} />
         </div>
     );

@@ -14,7 +14,8 @@ export default function PostInfo(props) {
             <PostHeader user={user}></PostHeader>
             <PostDescription 
                 user={user}
-                description={postFeature.description}>
+                description={postFeature.description}
+                postDate={postFeature.postDate}>
             </PostDescription>
             <PostOptions 
                 likes={postFeature.likes} 

@@ -1,10 +1,15 @@
 .postDescContainer {
-    width: 318px;
-    height: 343px;
+    width: inherit;
+    height: 375px;
     border-left: 1px solid rgb(239, 239, 239);
-    padding: 16px 0 16px 16px;
+    padding: 22px 16px 16px 16px;
     position: relative;
     overflow: hidden;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    display: flex;
+    flex-direction: column;
 }
 
 .postDescContent {
@@ -18,5 +23,25 @@
     width: 100%;
     max-height: 100%;
     white-space: normal;
+    line-height: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
+
+.description a { 
+    position: absolute;
+    top: 0;
+    height: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.description .postDate {
+    margin: 16px 0 4px 0;
+    font-size: 10px;
+    cursor: default;
+    opacity: 0.7;
+}
+
 
