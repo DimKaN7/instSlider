@@ -42,9 +42,9 @@
     cursor: pointer;
 }
 
-.iconLike {
+/* .iconLike {
     background: url('../icons/like.svg') center no-repeat;
-}
+} */
 .iconComment {
     background: url('../icons/comment.svg') center no-repeat;
 }

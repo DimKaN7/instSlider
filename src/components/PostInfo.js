@@ -18,13 +18,12 @@ export default function PostInfo(props) {
                 postDate={postFeature.postDate}>
             </PostDescription>
             <PostOptions 
-                likes={postFeature.likes} 
-                postDate={postFeature.postDate}>
+                postDate={postFeature.postDate}
+                likes={props.likes}
+                onLikeClick={props.onLikeClick}
+                >
             </PostOptions>
             <PostComment></PostComment>
-            {/* <Description></Description>
-            <Options></Options>
-            <Comment></Comment> */}
         </div>
     );
 }
